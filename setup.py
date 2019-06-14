@@ -6,12 +6,12 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="tzhworkauto",
     version="0.0.1",
-    author="Example Author",
+    author="tzh",
     author_email="13060820957tzh@gmail.com",
     description="A package for auto work of oa sheet ",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/664956016/tzhworkauto.git",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
