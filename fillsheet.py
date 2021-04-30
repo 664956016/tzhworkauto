@@ -10,7 +10,7 @@ PERSON = '唐梓豪'
 PRE_TITLE = pag.prompt(text='申购名称', title='请输入' , default='')
 TITLE = PRE_TITLE + '-' + PERSON + '-' + TIME
 BUYER = '采购部'
-USER = '设备部'
+USER = '设备动力部'
 PROJECT = TITLE
 REASON = '设备维修、保养，零件或材料采购'
 NUMBER = '1'
@@ -71,11 +71,18 @@ def fill_info(fname, info=None, right_x=None, down_y=None):
             
 #打开新建流程页面function
 def open_setup_page():
-    while_template('process.png')
-    while_template('newsetup.png')
-    while_template('apply.png')        
-    time.sleep(5)
-    print(while_template('waiting.png'))
+    # while_template('process.png')
+    # while_template('newsetup.png')
+    # while_template('apply.png')        
+    # time.sleep(5)
+    pag.click(333, 49, 3)
+    time.sleep(1)
+    pag.press("del")
+    pag.write("https://oa.ytmilk.cn/workflow/request/AddRequest.jsp?workflowid=5708&isagent=0&beagenter=0&f_weaver_belongto_userid=")
+    time.sleep(2)
+    pag.press("enter")
+    time.sleep(4)
+    #print(while_template('waiting.png'))
 
     
 #填表    
