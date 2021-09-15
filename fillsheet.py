@@ -16,7 +16,11 @@ REASON = '设备维修、保养，零件或材料采购'
 NUMBER = '1'
 UNIT = '批'
 GUIGE = '见附件'
-PRICE = pag.prompt(text='价格：', title='请输入' , default='')
+PRICE_INIT = pag.prompt(text='价格：', title='请输入' , default='')
+PRICE = ''
+for w in PRICE_INIT.strip('￥').split(','):
+    PRICE += w
+
 
 '''
 关于偏移量参数：
